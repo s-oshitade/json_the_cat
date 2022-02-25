@@ -5,4 +5,5 @@ request(`https://api.thecatapi.com/v1/breeds/search?q=sib`, (error, response, bo
   if(error) throw error;
   console.log(`status code: `, response.statusCode);
   const data = JSON.parse(body);
+  console.log(data[0].description)
 })
