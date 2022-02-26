@@ -4,7 +4,7 @@
   "description": "",
   "main": "breedFetcher.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/s-oshitade/json_the_cat#readme",
   "dependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.1",
     "request": "^2.88.2"
   }
 }
