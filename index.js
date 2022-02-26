@@ -1,6 +1,6 @@
 const { fetchBreedDescription } = require('./breedFetcher');
 
-const url = `https://api.thecatapi.com/v1/breeds/search?q=${process.argv[2].toString()}`;
+const breedName = process.argv[2].toString();
 
 const callback = function(error, desc) {
   if (error) {
@@ -10,5 +10,5 @@ const callback = function(error, desc) {
   }
 };
 
-fetchBreedDescription(url, callback);
+fetchBreedDescription(breedName, callback);
 
